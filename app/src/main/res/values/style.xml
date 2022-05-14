@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Main_text" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/fiveteen_dp</item>
+    </style>
+
+    <style name="subtext" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/subtext_12sp</item>
+    </style>
+
+    <style name="smallBtn" parent="">
+        <item name="cornerRadius">@dimen/margin_20dp</item>
+        <item name="backgroundTint">@color/bluePurple</item>
+    </style>
+
+    <style name="Btn" parent="">
+        <item name="backgroundTint">@color/white</item>
+    </style>
+
+</resources>

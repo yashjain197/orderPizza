@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="@dimen/elevation_16dp"
+    android:backgroundTint="@color/dark_200"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/Main_text"
+            android:id="@+id/pizzaName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ten_dp"
+            android:text="@string/pizza_name"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/type_food"
+            android:layout_width="@dimen/small_image_20dp"
+            android:layout_height="@dimen/small_image_20dp"
+            android:layout_margin="@dimen/ten_dp"
+            android:src="@drawable/non_veg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/description"
+            style="@style/subtext"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ten_dp"
+            android:text="@string/description"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pizzaName" />
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:layout_marginEnd="@dimen/ten_dp"
+            android:layout_marginBottom="@dimen/margin_20dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/type_food">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/decrease"
+                style="@style/smallBtn"
+                android:layout_width="@dimen/small_button_40dp"
+                android:layout_height="@dimen/small_button_40dp"
+                android:backgroundTint="@color/white"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/minus"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/integer_number"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/zero"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/increase"
+                style="@style/smallBtn"
+                android:layout_width="@dimen/small_button_40dp"
+                android:layout_height="@dimen/small_button_40dp"
+                android:text="@string/plus" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
